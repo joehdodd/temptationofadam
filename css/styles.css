@@ -1,0 +1,85 @@
+/* ======================
+        Base Styles
+   ====================== */
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, span {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ======================
+        Layout Styles
+   ====================== */
+#wrapper {
+    position: relative;
+}
+
+#header {
+    position: absolute;
+    z-index: 700;
+    width: 100%;
+}
+
+#content {
+
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-content {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.watched {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.minutesHeading{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff;
+}
+
+#minutes,
+#totalMinutes {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.footer {
+    height: 150px;
+}
+
+.footer-content {
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #888;
+}
+
+
