@@ -2,4 +2,4 @@
 
 Microsite for upcoming YA book.
 
-http://joehdodd.githubt.io/temptationofadam
+http://joehdodd.github.io/temptationofadam
