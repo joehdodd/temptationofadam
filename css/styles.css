@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, p, span {
-    font-family: 'Oswald', sans-serif;
+h1, h2, h3, p, span, button {
+    font-family: 'Roboto Slab', serif;
+}
+
+hr {
+  width: 75%;
 }
 
 /* ======================
@@ -24,15 +28,14 @@ h1, h2, h3, p, span {
     width: 100%;
 }
 
-#content {
-
-}
-
 .container {
     width: 90%;
     max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+}
+
+.col {
+    width: 100%;
 }
 
 .col {
@@ -56,13 +59,13 @@ h1, h2, h3, p, span {
     width: 100vw;
     height: 100vh;
     background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
-    ),url(../img/banner.jpg);
+    linear-gradient(#000, transparent 90%),
+    linear-gradient(0deg, #f7f7f7, transparent 60%),
+    url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
     filter: grayscale(100%);
+<<<<<<< HEAD
 
 }
 
@@ -77,7 +80,28 @@ h1, h2, h3, p, span {
     text-align: center;
     font-size: 1.5rem;
     font-weight: normal;
+=======
+}
+
+.minutesHeading {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: lighter;
+>>>>>>> master
     color: #fff;
+    margin-top: 150px;
+    -webkit-animation: fadein 16s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 16s; /* Firefox < 16 */
+        -ms-animation: fadein 16s; /* Internet Explorer */
+         -o-animation: fadein 16s; /* Opera < 12.1 */
+            animation: fadein 16s;
+}
+
+.minutesQuestion {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #222;
     margin-top: 150px;
     -webkit-animation: fadein 16s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 16s; /* Firefox < 16 */
@@ -109,6 +133,7 @@ h1, h2, h3, p, span {
 @-moz-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+<<<<<<< HEAD
 }
 
 /* Safari, Chrome and Opera > 12.1 */
@@ -123,6 +148,22 @@ h1, h2, h3, p, span {
     to   { opacity: 1; }
 }
 
+=======
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+>>>>>>> master
 /* Opera < 12.1 */
 @-o-keyframes fadein {
     from { opacity: 0; }
@@ -132,15 +173,36 @@ h1, h2, h3, p, span {
 
 .footer {
     height: 150px;
+    text-align: center;
+    background: #f7f7f7;
 }
 
 .footer-content {
-    text-align: center;
     font-weight: lighter;
     text-transform: uppercase;
-    color: #888;
+    color: #222;
 }
 
+.footer-tag {
+  margin-top: 0;
+}
+
+/* ======================
+        Button Styles
+   ====================== */
+
+.btn {
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background: #f7f7f7;
+  width: 15%;
+  height: 3rem;
+  transition-duration: 0.5s;
+  transition-property: border, background, color;
+}
+
+<<<<<<< HEAD
 /* ======================
         Media Queries
    ====================== */
@@ -165,4 +227,39 @@ h1, h2, h3, p, span {
     }
 
 }
+=======
+.btn:hover {
+  border: #444;
+  background: #444;
+  color: #fff;
+}
 
+.btn:active {
+  background: #000;
+}
+
+/* ======================
+        Media Queries
+   ====================== */
+>>>>>>> master
+
+@media screen and (min-width: 768px) {
+
+    .watched-content {
+        margin-top: 150px;
+    }
+
+    .minutesHeading {
+        font-size: 2rem;
+    }
+
+    .minutesQuestion {
+        font-size: 3rem;
+    }
+
+    #minutes,
+    #totalMinutes {
+        font-size: 2.5rem;
+    }
+
+}
