@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, p, span {
-    font-family: 'Oswald', sans-serif;
+h1, h2, h3, p, span, button {
+    font-family: 'Roboto Slab', serif;
+}
+
+hr {
+  width: 75%;
 }
 
 /* ======================
@@ -24,15 +28,10 @@ h1, h2, h3, p, span {
     width: 100%;
 }
 
-#content {
-
-}
-
 .container {
     width: 90%;
     max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .col {
@@ -57,13 +56,12 @@ h1, h2, h3, p, span {
     height: 100vh;
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
     filter: grayscale(100%);
-
 }
 
 .minutesHeading {
@@ -132,13 +130,39 @@ h1, h2, h3, p, span {
 
 .footer {
     height: 150px;
+    margin-top: 1em;
+    text-align: center;
 }
 
 .footer-content {
-    text-align: center;
     font-weight: lighter;
     text-transform: uppercase;
-    color: #888;
+    color: #222;
+}
+
+/* ======================
+        Button Styles
+   ====================== */
+
+.btn {
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background: #fff;
+  width: 15%;
+  height: 3rem;
+  transition-duration: 0.5s;
+  transition-property: border, background, color;
+}
+
+.btn:hover {
+  border: #444;
+  background: #444;
+  color: #fff;
+}
+
+.btn:active {
+  background: #000;
 }
 
 /* ======================
@@ -165,4 +189,3 @@ h1, h2, h3, p, span {
     }
 
 }
-
