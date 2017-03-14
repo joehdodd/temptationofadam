@@ -55,10 +55,9 @@ hr {
     width: 100vw;
     height: 100vh;
     background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url(../img/banner.jpg);
+    linear-gradient(#000, transparent 90%),
+    linear-gradient(0deg, #f7f7f7, transparent 60%),
+    url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
     filter: grayscale(100%);
@@ -75,7 +74,7 @@ hr {
     text-align: center;
     font-size: 1.5rem;
     font-weight: normal;
-    color: #fff;
+    color: #222;
     margin-top: 150px;
     -webkit-animation: fadein 16s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 16s; /* Firefox < 16 */
@@ -130,14 +129,18 @@ hr {
 
 .footer {
     height: 150px;
-    margin-top: 1em;
     text-align: center;
+    background: #f7f7f7;
 }
 
 .footer-content {
     font-weight: lighter;
     text-transform: uppercase;
     color: #222;
+}
+
+.footer-tag {
+  margin-top: 0;
 }
 
 /* ======================
@@ -148,7 +151,7 @@ hr {
   outline: none;
   border: 2px solid #000;
   border-radius: 2px;
-  background: #fff;
+  background: #f7f7f7;
   width: 15%;
   height: 3rem;
   transition-duration: 0.5s;
