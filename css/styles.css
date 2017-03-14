@@ -38,10 +38,6 @@ hr {
     width: 100%;
 }
 
-.col {
-    width: 100%;
-}
-
 .header-content {
     font-size: 2rem;
     text-align: center;
@@ -65,8 +61,6 @@ hr {
     background-position: center;
     background-size: cover;
     filter: grayscale(100%);
-<<<<<<< HEAD
-
 }
 
 .minutesHeading {
@@ -74,27 +68,6 @@ hr {
     font-size: 1.25rem;
     font-weight: lighter;
     color: #fff;
-}
-
-.minutesQuestion {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: normal;
-=======
-}
-
-.minutesHeading {
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: lighter;
->>>>>>> master
-    color: #fff;
-    margin-top: 150px;
-    -webkit-animation: fadein 16s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 16s; /* Firefox < 16 */
-        -ms-animation: fadein 16s; /* Internet Explorer */
-         -o-animation: fadein 16s; /* Opera < 12.1 */
-            animation: fadein 16s;
 }
 
 .minutesQuestion {
@@ -133,7 +106,6 @@ hr {
 @-moz-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-<<<<<<< HEAD
 }
 
 /* Safari, Chrome and Opera > 12.1 */
@@ -148,22 +120,6 @@ hr {
     to   { opacity: 1; }
 }
 
-=======
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
->>>>>>> master
 /* Opera < 12.1 */
 @-o-keyframes fadein {
     from { opacity: 0; }
@@ -202,32 +158,6 @@ hr {
   transition-property: border, background, color;
 }
 
-<<<<<<< HEAD
-/* ======================
-        Media Queries
-   ====================== */
-
-@media screen and (min-width: 768px) {
-
-    .watched-content {
-        margin-top: 150px;
-    }
-
-    .minutesHeading {
-        font-size: 2rem;
-    }
-
-    .minutesQuestion {
-        font-size: 3rem;
-    }
-
-    #minutes,
-    #totalMinutes {
-        font-size: 2.5rem;
-    }
-
-}
-=======
 .btn:hover {
   border: #444;
   background: #444;
@@ -241,7 +171,6 @@ hr {
 /* ======================
         Media Queries
    ====================== */
->>>>>>> master
 
 @media screen and (min-width: 768px) {
 
